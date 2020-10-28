@@ -5,6 +5,8 @@
  */
 namespace MGS\AjaxCart\Block\Product;
 
+use Magento\Catalog\Model\Product;
+
 class ImageBuilder extends \Magento\Catalog\Block\Product\ImageBuilder
 {
     /**
@@ -12,7 +14,7 @@ class ImageBuilder extends \Magento\Catalog\Block\Product\ImageBuilder
      *
      * @return \Magento\Catalog\Block\Product\Image
      */
-    public function create()
+    public function create(Product $product = null, string $imageId = null, array $attributes = null)
     {
         /** @var \Magento\Catalog\Helper\Image $helper */
         $helper = $this->helperFactory->create()
