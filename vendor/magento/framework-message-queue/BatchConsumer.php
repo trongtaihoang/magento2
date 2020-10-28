@@ -153,7 +153,7 @@ class BatchConsumer implements ConsumerInterface
     {
         $count = $maxNumberOfMessages
             ? $maxNumberOfMessages
-            : $this->configuration->getMaxMessages() ?: 1;
+            : ($this->configuration->getMaxMessages() ?: 1);
         $transactionCallback = $this->getTransactionCallback($queue, $merger);
 
         if ($this->batchSize) {
