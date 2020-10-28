@@ -3,7 +3,7 @@
 namespace MGS\Blog\Block\Adminhtml\Category\Grid\Renderer;
 
 use Magento\Backend\Block\Widget\Grid\Column\Renderer\AbstractRenderer;
-use Magento\Framework\Object;
+//use Magento\Framework\Object;
 use Magento\Store\Model\StoreManagerInterface;
 
 class Thumbnail extends AbstractRenderer
