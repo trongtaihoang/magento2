@@ -26,7 +26,7 @@ class Data extends \Magento\Swatches\Helper\Data
      * @param ModelProduct $product
      * @return array
      */
-    public function getProductMediaGallery(\Magento\Catalog\Model\Product $product)
+    public function getProductMediaGallery(\Magento\Catalog\Model\Product $product): array
     {
         $baseImage = null;
         $gallery = [];
